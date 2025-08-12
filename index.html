@@ -50,15 +50,12 @@
         height: 28px;
       }
       .links {
-        display: grid;
+        display: flex;
+        flex-direction: column;
         gap: 10px;
         margin-top: 4px;
       }
       .link {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        gap: 10px;
         padding: 12px 14px;
         border-radius: 10px;
         background: rgba(255, 255, 255, 0.08);
@@ -67,6 +64,7 @@
         text-decoration: none;
         transition: transform 0.15s ease, background 0.15s ease;
         -webkit-tap-highlight-color: transparent;
+        word-break: break-word;
       }
       .link:hover {
         transform: translateY(-1px);
