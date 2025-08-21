@@ -1,0 +1,9 @@
+{
+    "workbench.colorCustomizations": {
+        "tree.indentGuidesStroke": "#cccccc",
+        "activityBar.background": "#0c162a",
+        "titleBar.activeBackground": "#0c162a",
+        "titleBar.activeForeground": "#FCFAF9"
+    },
+    "editor.defaultFormatter": "astro-build.astro-vscode"
+}
