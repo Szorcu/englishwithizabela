@@ -1,0 +1,110 @@
+---
+import { BookCheck, PencilLine, Users } from "@lucide/astro";
+---
+
+<section id="oferta" class="py-24 sm:py-32">
+  <div class="container mx-auto px-4 relative z-10">
+    <div class="flex flex-col justify-center items-center text-center mb-16">
+      <h2
+        class="mb-4 max-w-lg text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
+      >
+        Zajęcia dopasowane do Twoich potrzeb
+      </h2>
+      <p class="text-lg text-slate-600 max-w-3xl mx-auto">
+        Kompleksowa nauka angielskiego dostosowana do Twoich potrzeb i celów
+        językowych. Od konwersacji po egzaminy — razem osiągniemy Twój językowy
+        cel.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div
+        class="rounded-lg border text-card-foreground shadow-2xs hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 bg-gradient-to-br from-white to-red-50/30 border-red-100/50"
+        data-v0-t="card"
+      >
+        <div class="p-8">
+          <div
+            class="bg-gradient-to-br from-red-100 to-red-200 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-6 shadow-lg"
+          >
+            <BookCheck class="h-8 w-8 text-red-600" />
+          </div>
+
+          <h3
+            class="text-xl font-semibold bg-gradient-to-r from-slate-800 to-slate-600 bg-clip-text text-transparent mb-4"
+          >
+            Przygotowanie do Egzaminów
+          </h3>
+
+          <p class="text-slate-600 mb-6">
+            Zdobądź pewność i świetne wyniki na <b>egzaminie ósmoklasisty</b>, <b
+              >maturze</b
+            > (podstawowej, rozszerzonej i ustnej) czy innych testach językowych.
+          </p>
+
+          <ul class="text-sm text-slate-600 space-y-2">
+            <li>• Skuteczne strategie egzaminacyjne</li>
+            <li>• Materiały ćwiczeniowe dopasowane do poziomu</li>
+            <li>• Wsparcie krok po kroku w przygotowaniach</li>
+          </ul>
+        </div>
+      </div>
+      <div
+        class="rounded-lg border text-card-foreground shadow-2xs hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 bg-gradient-to-br from-white to-red-50/30 border-red-100/50"
+        data-v0-t="card"
+      >
+        <div class="p-8">
+          <div
+            class="bg-gradient-to-br from-red-100 to-red-200 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-6 shadow-lg"
+          >
+            <Users class="h-8 w-8 text-red-600" />
+          </div>
+
+          <h3
+            class="text-xl font-semibold bg-gradient-to-r from-slate-800 to-slate-600 bg-clip-text text-transparent mb-4"
+          >
+            Konwersacje
+          </h3>
+
+          <p class="text-slate-600 mb-6">
+            Zbuduj <b>pewność siebie</b> w mówieniu po angielsku i przełam barierę
+            językową dzięki rozmowom na interesujące Cię tematy.
+          </p>
+
+          <ul class="text-sm text-slate-600 space-y-2">
+            <li>• Poprawa wymowy i płynności</li>
+            <li>• Poszerzanie słownictwa</li>
+            <li>• Nauka naturalnych zwrotów i wyrażeń</li>
+          </ul>
+        </div>
+      </div><div
+        class="rounded-lg border text-card-foreground shadow-2xs hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 bg-gradient-to-br from-white to-red-50/30 border-red-100/50"
+        data-v0-t="card"
+      >
+        <div class="p-8">
+          <div
+            class="bg-gradient-to-br from-red-100 to-red-200 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-6 shadow-lg"
+          >
+            <PencilLine class="h-8 w-8 text-red-600" />
+          </div>
+
+          <h3
+            class="text-xl font-semibold bg-gradient-to-r from-slate-800 to-slate-600 bg-clip-text text-transparent mb-4"
+          >
+            Gramatyka i Pisanie
+          </h3>
+
+          <p class="text-slate-600 mb-6">
+            Opanuj zasady gramatyczne i naucz się jasno wyrażać myśli w piśmie —
+            od krótkich tekstów po bardziej formalne wypowiedzi.
+          </p>
+
+          <ul class="text-sm text-slate-600 space-y-2">
+            <li>• Podstawy gramatyki w prostym ujęciu</li>
+            <li>• Techniki pisania esejów i prac</li>
+            <li>• Komunikacja w języku biznesowym</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

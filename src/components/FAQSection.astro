@@ -1,0 +1,17 @@
+---
+import { FAQ } from "./FAQList";
+---
+
+<section id="faq" class="bg-gray-50 py-24 sm:py-32">
+  <div class="mx-auto max-w-4xl px-6 lg:px-8">
+    <h2
+      class="text-3xl font-bold leading-10 tracking-tight text-slate-900 sm:text-4xl"
+    >
+      Najczęściej zadawane pytania
+    </h2>
+
+    <div class="mt-10">
+      <FAQ client:load />
+    </div>
+  </div>
+</section>
