@@ -8,45 +8,38 @@ import {
 const ITEMS = [
   {
     id: "item-1",
-    question: "Jak wyglądają zajęcia?",
-    answer:
-      "Zajęcia odbywają się online przez komunikator (np. Zoom, Google Meet). Lekcje są indywidualne, dostosowane do Twojego poziomu i celów.",
+    question: "Ile trwa jedna lekcja?",
+    answer: "Standardowo jedna lekcja trwa 60 minut.",
   },
   {
     id: "item-2",
-    question: "Czy muszę kupować dodatkowe materiały?",
+    question: "Ile kosztuje lekcja?",
     answer:
-      "Nie, wszystkie potrzebne materiały do nauki otrzymasz ode mnie w cenie zajęć.",
+      "Indywidualna lekcja stacjonarnie u mnie lub online kosztuje 100 zł. Cena lekcji w domu ucznia będzie rozpatrywana indywidualnie. Cena lekcji w grupach również będzie rozpatrywana indywidualnie.",
   },
   {
     id: "item-3",
-    question: "Jak mogę zapisać się na pierwszą lekcję?",
+    question: "Jak wyglądają zajęcia?",
     answer:
-      "Wystarczy wypełnić formularz kontaktowy na stronie lub napisać bezpośrednio na maila/Instagram.",
+      "Każde zajęcia są w 100% dostosowane do potrzeb ucznia. Nie miałam jeszcze dwóch identycznych lekcji. Biorę pod uwagę na pierwszym miejscu jaki jest Twój cel i dopiero wtedy ustalamy plan działania. Przygotuję Twoje dziecko do egzaminu ósmoklasisty i egzaminu maturalnego. Możemy także pracować nad brytyjską wymową lub zagadnieniami z gramatyki, których jeszcze nie do końca rozumiesz. Możemy również przełamywać barierę strachu i rozmawiać o ciekawych tematach ze świata technologii, muzyki czy medycyny. To Ty wybierasz o czym chcesz się uczyć. A nawet jak nie masz pomysłu, to ja mam wiele materiałów, z których możemy zaczerpnąć inspirację do konwersacji.",
   },
   {
     id: "item-4",
-    question: "Ile trwa jedna lekcja?",
+    question: "Na jakim poziomie muszę być, żeby zacząć lekcje?",
     answer:
-      "Standardowa lekcja trwa 60 minut, ale istnieje możliwość ustalenia krótszych lub dłuższych sesji w zależności od Twoich potrzeb.",
+      "Uczę dzieci i dorosłych na każdym poziomie zaawansowania. Najważniejsze są chęci, więc obecny poziom Twojej znajomości języka nie ma tak naprawdę dla mnie znaczenia.",
   },
   {
     id: "item-5",
-    question: "Czy przygotowujesz do egzaminów językowych?",
+    question: "Czy uczy pani w grupach?",
     answer:
-      "Tak, pomagam w przygotowaniach do IELTS, TOEFL, egzaminów Cambridge oraz matury rozszerzonej.",
+      "Tak, obecnie uczę również małe 2-3 osobowe grupki uczniów. Uczniowie ci zgłosili się do mnie na nauczanie już jako grupa znajomych. Jeżeli masz taką grupkę, to zapraszam do kontaktu.",
   },
   {
     id: "item-6",
-    question: "Czy mogę odwołać lekcję?",
+    question: "Jak mogę się zapisać na pierwszą lekcję?",
     answer:
-      "Tak, wystarczy poinformować mnie minimum 24h przed zajęciami, wtedy ustalimy nowy termin.",
-  },
-  {
-    id: "item-7",
-    question: "Na jakim poziomie muszę być, żeby zacząć?",
-    answer:
-      "Nie ma to znaczenia – pracuję z uczniami od poziomu podstawowego (A1) aż po zaawansowany (C1/C2).",
+      "Po prostu do mnie napisz lub zadzwoń. Wszystkie dane znajdziesz na mojej stronie głównej. Do zobaczenia!",
   },
 ];
 
