@@ -1,4 +1,6 @@
 ---
+import { BookOpenText, Globe, GraduationCap } from "@lucide/astro";
+
 /* Opcjonalnie: podmień ścieżkę obrazka i teksty poniżej */
 const photo =
   "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=1600&auto=format&fit=crop";
@@ -13,81 +15,71 @@ const photo =
         <div class="lg:max-w-lg">
           <h2 class="text-base font-semibold leading-7 text-red-600">
             Poznaj swoją nauczycielkę
-          </h2><p
+          </h2>
+          <p
             class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
           >
             Izabela Śliż
-          </p><p class="mt-6 text-lg leading-8 text-gray-600">
-            Certyfikowana nauczycielka języka angielskiego z wieloletnim
-            doświadczeniem. Specjalizuję się w indywidualnym podejściu do
-            każdego ucznia i tworzeniu przyjaznej atmosfery nauki.
-          </p><dl
-            class="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none"
+          </p>
+
+          <p class="mt-6 text-lg leading-8 text-gray-600">
+            Doświadczona prywatna nauczycielka języka angielskiego. Ukończyłam
+            Filologię Angielską w Polsce jak i studia podyplomowe w UK.
+            Pracowałam i mieszkałam w Londynie przez prawie 18 lat. Jestem
+            otwartą, cierpliwą i ciekawą drugiego człowieka osobą. Będę Was
+            wspierać i motywować abyście osiągnęli swój wymarzony cel.
+          </p>
+
+          <dl
+            class="mt-10 max-w-xl space-y-6 text-base leading-7 text-gray-600 lg:max-w-none"
           >
             <div class="relative pl-9">
               <dt class="inline font-semibold text-gray-900">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="lucide lucide-award absolute left-1 top-1 h-5 w-5 text-red-600"
-                  ><path
-                    d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"
-                  ></path><circle cx="12" cy="8" r="6"></circle></svg
-                >5+ lat doświadczenia
-              </dt><dd class="inline">
-                w nauczaniu języka angielskiego na wszystkich poziomach.
+                <Globe class="absolute left-1 top-1 h-5 w-5 text-red-600" />
+
+                Near-native speaker
+              </dt>
+
+              <dd class="inline">- prawie 18 lat życia i pracy w Londynie.</dd>
+            </div>
+
+            <div class="relative pl-9">
+              <dt class="inline font-semibold text-gray-900">
+                <GraduationCap
+                  class="absolute left-1 top-1 h-5 w-5 text-red-600"
+                />
+
+                Wykształcenie kierunkowe
+              </dt>
+
+              <dd class="inline">
+                - Filologia Angielska w Polsce oraz studia podyplomowe w
+                Wielkiej Brytanii.
               </dd>
-            </div><div class="relative pl-9">
+            </div>
+
+            <div class="relative pl-9">
               <dt class="inline font-semibold text-gray-900">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="lucide lucide-users absolute left-1 top-1 h-5 w-5 text-red-600"
-                  ><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"
-                  ></path><circle cx="9" cy="7" r="4"></circle><path
-                    d="M22 21v-2a4 4 0 0 0-3-3.87"></path><path
-                    d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg
-                >100+ zadowolonych uczniów
-              </dt><dd class="inline">którzy osiągnęli swoje cele językowe.</dd>
-            </div><div class="relative pl-9">
-              <dt class="inline font-semibold text-gray-900">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="lucide lucide-clock absolute left-1 top-1 h-5 w-5 text-red-600"
-                  ><circle cx="12" cy="12" r="10"></circle><polyline
-                    points="12 6 12 12 16 14"></polyline></svg
-                >Elastyczne godziny
-              </dt><dd class="inline">dostosowane do Twojego harmonogramu.</dd>
+                <BookOpenText
+                  class="absolute left-1 top-1 h-5 w-5 text-red-600"
+                />
+
+                Wieloletnie doświadczenie w nauczaniu
+              </dt>
+
+              <dd class="inline">
+                - setki godzin zajęć z osobami na różnych poziomach.
+              </dd>
             </div>
           </dl>
         </div>
-      </div><div class="flex items-start justify-end lg:order-first">
+      </div>
+
+      <div class="flex items-start justify-end lg:order-first">
         <img
           alt="Izabela Śliż - English Teacher"
-          class="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]"
-          src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=600&h=600&fit=crop&crop=face"
+          class="aspect-square object-cover max-w-full w-xl rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-2xl sm:max-w-none"
+          src="/izabela-sliz.jpg"
         />
       </div>
     </div>
