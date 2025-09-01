@@ -1,25 +1,23 @@
 ---
-
+import { BookCheck, PencilLine, Users } from "@lucide/astro";
 ---
 
-<section
-  id="oferta"
-  class="py-20 bg-gradient-to-br from-white via-slate-50/50 to-white relative overflow-hidden"
->
-  <div
-    class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1520637836458-ca588d08c8be?w=1200&h=800&fit=crop')] bg-cover bg-center opacity-5"
-  >
-  </div><div class="container mx-auto px-4 relative z-10">
-    <div class="text-center mb-16">
+<section id="oferta" class="py-24 sm:py-32">
+  <div class="container mx-auto px-4 relative z-10">
+    <div class="flex flex-col justify-center items-center text-center mb-16">
       <h2
-        class="text-4xl font-bold bg-gradient-to-r from-slate-800 via-slate-700 to-red-600 bg-clip-text text-transparent mb-4"
+        class="mb-4 max-w-lg text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
       >
-        Moja Oferta
-      </h2><p class="text-xl text-slate-600 max-w-3xl mx-auto">
+        Zajęcia dopasowane do Twoich potrzeb
+      </h2>
+      <p class="text-lg text-slate-600 max-w-3xl mx-auto">
         Kompleksowa nauka angielskiego dostosowana do Twoich potrzeb i celów
-        językowych.
+        językowych. Od konwersacji po egzaminy — razem osiągniemy Twój językowy
+        cel.
       </p>
-    </div><div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
       <div
         class="rounded-lg border text-card-foreground shadow-2xs hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 bg-gradient-to-br from-white to-red-50/30 border-red-100/50"
         data-v0-t="card"
@@ -28,68 +26,54 @@
           <div
             class="bg-gradient-to-br from-red-100 to-red-200 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-6 shadow-lg"
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="lucide lucide-users h-8 w-8 text-red-600"
-              ><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"
-              ></path><circle cx="9" cy="7" r="4"></circle><path
-                d="M22 21v-2a4 4 0 0 0-3-3.87"></path><path
-                d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg
-            >
-          </div><h3
+            <BookCheck class="h-8 w-8 text-red-600" />
+          </div>
+
+          <h3
             class="text-xl font-semibold bg-gradient-to-r from-slate-800 to-slate-600 bg-clip-text text-transparent mb-4"
           >
-            Konwersacje
-          </h3><p class="text-slate-600 mb-6">
-            Zbuduj pewność siebie w mówieniu po angielsku poprzez angażujące
-            rozmowy na tematy, które Cię interesują.
-          </p><ul class="text-sm text-slate-600 space-y-2">
-            <li>• Poprawa wymowy</li><li>• Rozszerzanie słownictwa</li><li>
-              • Naturalne wyrażanie się
-            </li>
+            Przygotowanie do Egzaminów
+          </h3>
+
+          <p class="text-slate-600 mb-6">
+            Zdobądź pewność i świetne wyniki na <b>egzaminie ósmoklasisty</b>, <b
+              >maturze</b
+            > (podstawowej, rozszerzonej i ustnej) czy innych testach językowych.
+          </p>
+
+          <ul class="text-sm text-slate-600 space-y-2">
+            <li>• Skuteczne strategie egzaminacyjne</li>
+            <li>• Materiały ćwiczeniowe dopasowane do poziomu</li>
+            <li>• Wsparcie krok po kroku w przygotowaniach</li>
           </ul>
         </div>
-      </div><div
-        class="rounded-lg border text-card-foreground shadow-2xs hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 bg-gradient-to-br from-white to-slate-50 border-slate-100"
+      </div>
+      <div
+        class="rounded-lg border text-card-foreground shadow-2xs hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 bg-gradient-to-br from-white to-red-50/30 border-red-100/50"
         data-v0-t="card"
       >
         <div class="p-8">
           <div
-            class="bg-gradient-to-br from-slate-100 to-slate-200 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-6 shadow-lg"
+            class="bg-gradient-to-br from-red-100 to-red-200 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-6 shadow-lg"
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="lucide lucide-book-open h-8 w-8 text-slate-600"
-              ><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path
-                d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg
-            >
-          </div><h3
+            <Users class="h-8 w-8 text-red-600" />
+          </div>
+
+          <h3
             class="text-xl font-semibold bg-gradient-to-r from-slate-800 to-slate-600 bg-clip-text text-transparent mb-4"
           >
-            Gramatyka i Pisanie
-          </h3><p class="text-slate-600 mb-6">
-            Opanuj zasady gramatyki angielskiej i rozwijaj umiejętności pisania
-            dla sukcesu akademickiego i zawodowego.
-          </p><ul class="text-sm text-slate-600 space-y-2">
-            <li>• Podstawy gramatyki</li><li>• Techniki pisania esejów</li><li>
-              • Komunikacja biznesowa
-            </li>
+            Konwersacje
+          </h3>
+
+          <p class="text-slate-600 mb-6">
+            Zbuduj <b>pewność siebie</b> w mówieniu po angielsku i przełam barierę
+            językową dzięki rozmowom na interesujące Cię tematy.
+          </p>
+
+          <ul class="text-sm text-slate-600 space-y-2">
+            <li>• Poprawa wymowy i płynności</li>
+            <li>• Poszerzanie słownictwa</li>
+            <li>• Nauka naturalnych zwrotów i wyrażeń</li>
           </ul>
         </div>
       </div><div
@@ -100,32 +84,24 @@
           <div
             class="bg-gradient-to-br from-red-100 to-red-200 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-6 shadow-lg"
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="lucide lucide-award h-8 w-8 text-red-600"
-              ><path
-                d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"
-              ></path><circle cx="12" cy="8" r="6"></circle></svg
-            >
-          </div><h3
+            <PencilLine class="h-8 w-8 text-red-600" />
+          </div>
+
+          <h3
             class="text-xl font-semibold bg-gradient-to-r from-slate-800 to-slate-600 bg-clip-text text-transparent mb-4"
           >
-            Przygotowanie do Egzaminów
-          </h3><p class="text-slate-600 mb-6">
-            Przygotuj się do egzaminów IELTS, TOEFL, Cambridge i innych testów
-            znajomości języka angielskiego.
-          </p><ul class="text-sm text-slate-600 space-y-2">
-            <li>• Strategie egzaminacyjne</li><li>
-              • Materiały ćwiczeniowe
-            </li><li>• Skupienie na poprawie wyników</li>
+            Gramatyka i Pisanie
+          </h3>
+
+          <p class="text-slate-600 mb-6">
+            Opanuj zasady gramatyczne i naucz się jasno wyrażać myśli w piśmie —
+            od krótkich tekstów po bardziej formalne wypowiedzi.
+          </p>
+
+          <ul class="text-sm text-slate-600 space-y-2">
+            <li>• Podstawy gramatyki w prostym ujęciu</li>
+            <li>• Techniki pisania esejów i prac</li>
+            <li>• Komunikacja w języku biznesowym</li>
           </ul>
         </div>
       </div>
