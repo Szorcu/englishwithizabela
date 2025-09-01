@@ -9,7 +9,7 @@ export const Navbar = () => {
         aria-label="Główna nawigacja"
         className="mx-auto flex justify-end max-w-7xl items-center p-4 lg:p-8 lg:justify-center"
       >
-        <div className="hidden lg:flex lg:gap-10">
+        <div className="hidden lg:flex lg:gap-14">
           <a
             href="#oferta"
             className="text-sm font-semibold text-white hover:text-indigo-200"

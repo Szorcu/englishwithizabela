@@ -1,5 +1,6 @@
 ---
 import { Instagram, Mail, Phone } from "@lucide/astro";
+import ContactForm from "./ContactForm";
 ---
 
 <section id="kontakt" class="relative">
@@ -9,28 +10,30 @@ import { Instagram, Mail, Phone } from "@lucide/astro";
   </div>
 
   <img
-    src="https://images.unsplash.com/photo-1533929736458-ca588d08c8be?w=1200&h=800&fit=crop"
+    src="/contact-bg.jpg"
     alt=""
     class="absolute inset-0 h-full w-full object-cover -z-10 opacity-10"
   />
 
   <div class="relative mx-auto max-w-7xl px-6 py-16 lg:py-24">
     <div class="grid gap-10 lg:grid-cols-2">
-      <!-- LEFT: copy + contact cards -->
       <div>
         <h2
           class="text-3xl font-extrabold tracking-tight text-white sm:text-4xl"
         >
           Gotowy, aby rozpocząć swoją przygodę z angielskim?
         </h2>
-        <p class="mt-4 max-w-xl text-base text-slate-300">
+        <p class="mt-4 max-w-xl text-base text-gray-400">
           Skontaktuj się, aby umówić pierwszą lekcję lub zadać pytania dotyczące
           mojego sposobu nauczania.
         </p>
 
         <div class="mt-8 space-y-5">
-          <div
-            class="rounded-2xl bg-white/5 p-4 ring-1 ring-white/15 backdrop-blur"
+          <a
+            class="block rounded-2xl bg-white/5 p-4 ring-1 ring-white/15 backdrop-blur hover:ring-white/25 transition"
+            href="tel:572004360"
+            target="_blank"
+            rel="noopener"
           >
             <div class="flex items-center gap-4">
               <span
@@ -40,13 +43,16 @@ import { Instagram, Mail, Phone } from "@lucide/astro";
               </span>
               <div>
                 <div class="font-semibold text-white">Telefon</div>
-                <div class="text-slate-300">572 004 360</div>
+                <div class="text-gray-400">572 004 360</div>
               </div>
             </div>
-          </div>
+          </a>
 
-          <div
-            class="rounded-2xl bg-white/5 p-4 ring-1 ring-white/15 backdrop-blur"
+          <a
+            class="block rounded-2xl bg-white/5 p-4 ring-1 ring-white/15 backdrop-blur hover:ring-white/25 transition"
+            href="mailto:englishwithizabelasliz@gmail.com"
+            target="_blank"
+            rel="noopener"
           >
             <div class="flex items-center gap-4">
               <span
@@ -56,15 +62,18 @@ import { Instagram, Mail, Phone } from "@lucide/astro";
               </span>
               <div>
                 <div class="font-semibold text-white">E-mail</div>
-                <div class="text-slate-300">
+                <div class="text-gray-400">
                   englishwithizabelasliz@gmail.com
                 </div>
               </div>
             </div>
-          </div>
+          </a>
 
-          <div
-            class="rounded-2xl bg-white/5 p-4 ring-1 ring-white/15 backdrop-blur"
+          <a
+            class="block rounded-2xl bg-white/5 p-4 ring-1 ring-white/15 backdrop-blur hover:ring-white/25 transition"
+            href="https://www.instagram.com/english_with_izabela/"
+            target="_blank"
+            rel="noopener"
           >
             <div class="flex items-center gap-4">
               <span
@@ -74,101 +83,14 @@ import { Instagram, Mail, Phone } from "@lucide/astro";
               </span>
               <div>
                 <div class="font-semibold text-white">Instagram</div>
-                <div class="text-slate-300">@english_with_izabela</div>
+                <div class="text-gray-400">@english_with_izabela</div>
               </div>
             </div>
-          </div>
+          </a>
         </div>
       </div>
 
-      <div
-        class="rounded-2xl bg-white/90 p-6 shadow-2xl ring-1 ring-black/10 backdrop-blur-sm sm:p-8"
-      >
-        <h3 class="mb-6 text-2xl font-semibold text-slate-800">
-          Wyślij wiadomość
-        </h3>
-
-        <form
-          action="https://api.web3forms.com/submit"
-          method="POST"
-          class="space-y-4"
-        >
-          <!-- REQUIRED: access key -->
-          <input
-            type="hidden"
-            name="access_key"
-            value="d6eb4d15-e321-402b-ae3a-9a030f494152"
-          />
-
-          <!-- Optional meta -->
-          <input
-            type="hidden"
-            name="from_name"
-            value="English with Izabela – Website"
-          />
-          <input
-            type="hidden"
-            name="subject"
-            value="New contact form message"
-          />
-
-          <!-- honeypot (anty-spam) -->
-          <input
-            type="checkbox"
-            name="botcheck"
-            class="hidden"
-            style="display:none"
-          />
-
-          <div>
-            <label class="mb-1 block text-sm font-medium text-slate-700"
-              >Imię</label
-            >
-            <input
-              name="first_name"
-              type="text"
-              required
-              class="w-full rounded-md border border-slate-200 bg-white px-3 py-2 text-slate-900 shadow-sm placeholder:text-slate-400 focus:border-indigo-400 focus:outline-none focus:ring-2 focus:ring-indigo-200"
-              placeholder="Your first name"
-            />
-          </div>
-
-          <div>
-            <label class="mb-1 block text-sm font-medium text-slate-700"
-              >Email</label
-            >
-            <input
-              name="email"
-              type="email"
-              required
-              class="w-full rounded-md border border-slate-200 bg-white px-3 py-2 text-slate-900 shadow-sm placeholder:text-slate-400 focus:border-indigo-400 focus:outline-none focus:ring-2 focus:ring-indigo-200"
-              placeholder="your.email@example.com"
-            />
-          </div>
-
-          <div>
-            <label class="mb-1 block text-sm font-medium text-slate-700"
-              >Message</label
-            >
-            <textarea
-              name="message"
-              rows="5"
-              required
-              class="w-full rounded-md border border-slate-200 bg-white px-3 py-2 text-slate-900 shadow-sm placeholder:text-slate-400 focus:border-indigo-400 focus:outline-none focus:ring-2 focus:ring-indigo-200"
-              placeholder="Tell me about your English learning goals and any questions you have..."
-            ></textarea>
-          </div>
-
-          <button
-            type="submit"
-            class="rounded-md w-full bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-indigo-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
-          >
-            Wyślij wiadomość
-          </button>
-
-          <!-- Optional: status info (prosty fallback bez JS – Web3Forms pokaże stronę wynikową/redirect) -->
-        </form>
-      </div>
+      <ContactForm client:load />
     </div>
   </div>
 </section>
