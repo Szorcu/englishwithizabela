@@ -15,7 +15,7 @@ const ITEMS = [
     id: "item-2",
     question: "Ile kosztuje lekcja?",
     answer:
-      "Indywidualna lekcja stacjonarnie u mnie lub online kosztuje 100 zł. Cena lekcji w domu ucznia będzie rozpatrywana indywidualnie. Cena lekcji w grupach również będzie rozpatrywana indywidualnie.",
+      "Indywidualna lekcja stacjonarnie u mnie lub online kosztuje 120 zł. Cena lekcji w domu ucznia będzie rozpatrywana indywidualnie. Cena lekcji w grupach również będzie rozpatrywana indywidualnie.",
   },
   {
     id: "item-3",
